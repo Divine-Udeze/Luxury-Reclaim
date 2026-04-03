@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Reclaim</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="style.css">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+<!-- Main Script -->
+<script src="script.js" defer></script>
+
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">LUXURY RECLAIM</div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div id="logo3d">
+    <img src="logo.png" alt="Luxury Reclaim Logo" class="spinning-logo">
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#brands">Brands</a>
+    <a href="#products">Shop</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html"><span id="cart-count">0</span> 🛒</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <video autoplay muted loop>
+    <source src="assets/hero.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+  <div class="hero-text">
+    <h1>Timeless Luxury</h1>
+    <button onclick="scrollToBrands()">Explore</button>
+  </div>
+</section>
+
+<!-- BRAND CATEGORIES -->
+<section class="brands" id="brands">
+  <h2>Shop by Brand</h2>
+  <div class="brand-grid">
+    <div class="brand-card" data-brand="Prada">Prada</div>
+    <div class="brand-card" data-brand="Louis Vuitton">Louis Vuitton</div>
+    <div class="brand-card" data-brand="Gucci">Gucci</div>
+    <div class="brand-card" data-brand="Balenciaga">Balenciaga</div>
+  </div>
+</section>
+
+<!-- SUBCATEGORIES -->
+<section class="subcategories" id="subcategories">
+  <h2 id="selected-brand-title"></h2>
+  <div class="subcat-grid"></div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <h2 id="products-title"></h2>
+  <div class="grid"></div>
+</section>
+
+</body>
+</html>

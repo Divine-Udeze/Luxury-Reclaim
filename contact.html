@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Luxury Reclaim</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+<script src="script-contact.js" defer></script>
+
+</head>
+<body>
+
+<div id="loader">LUXURY RECLAIM</div>
+
+<header class="navbar">
+  <div id="logo3d">
+    <img src="logo.png" alt="Luxury Reclaim Logo" class="spinning-logo">
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html"><span id="cart-count">0</span> 🛒</a>
+  </nav>
+</header>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>Have questions or need assistance? Reach out to us:</p>
+
+  <form id="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Email Address" required />
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+</body>
+</html>
