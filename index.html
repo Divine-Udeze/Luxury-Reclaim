@@ -1,77 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luxury Reclaim</title>
+  <meta charset="UTF-8">
+  <title>Luxury Reclaim</title>
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-<!-- Stylesheet -->
-<link rel="stylesheet" href="style.css">
-
-<!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-
-<!-- Main Script -->
-<script src="script.js" defer></script>
-
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- LOADER -->
-<div id="loader">LUXURY RECLAIM</div>
+<!-- HEADER (NO LOGO) -->
+<header>
+  <div class="brand-name">LUXURY RECLAIM</div>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div id="logo3d">
-    <img src="logo.png" alt="Luxury Reclaim Logo" class="spinning-logo">
-  </div>
   <nav>
     <a href="index.html">Home</a>
     <a href="#brands">Brands</a>
-    <a href="#products">Shop</a>
     <a href="contact.html">Contact</a>
-    <a href="cart.html"><span id="cart-count">0</span> 🛒</a>
+    <a href="cart.html">Cart <span id="cartCount">0</span></a>
   </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <video autoplay muted loop>
-    <source src="assets/hero.mp4" type="video/mp4">
-  </video>
-  <div class="overlay"></div>
-  <div class="hero-text">
-    <h1>Timeless Luxury</h1>
-    <button onclick="scrollToBrands()">Explore</button>
+  <div class="hero-inner">
+    <h1 class="title">Luxury Reclaim</h1>
+    <p class="subtitle" id="subtitle">Timeless Luxury</p>
+    <button onclick="scrollToBrands()">Explore Collection</button>
   </div>
 </section>
 
-<!-- BRAND CATEGORIES -->
+<!-- BRANDS -->
 <section class="brands" id="brands">
-  <h2>Shop by Brand</h2>
+  <h2>HOUSE SELECTION</h2>
+
   <div class="brand-grid">
-    <div class="brand-card" data-brand="Prada">Prada</div>
-    <div class="brand-card" data-brand="Louis Vuitton">Louis Vuitton</div>
-    <div class="brand-card" data-brand="Gucci">Gucci</div>
-    <div class="brand-card" data-brand="Balenciaga">Balenciaga</div>
+
+    <div class="brand-card">
+      <h3>Balenciaga</h3>
+      <div class="product" onclick="addToCart('Balenciaga Hoodie', 890)">Hoodie — $890</div>
+      <div class="product" onclick="addToCart('Balenciaga Jacket', 1200)">Jacket — $1200</div>
+    </div>
+
+    <div class="brand-card">
+      <h3>Gucci</h3>
+      <div class="product" onclick="addToCart('Gucci Sneakers', 950)">Sneakers — $950</div>
+      <div class="product" onclick="addToCart('Gucci Bag', 1500)">Bag — $1500</div>
+    </div>
+
+    <div class="brand-card">
+      <h3>Louis Vuitton</h3>
+      <div class="product" onclick="addToCart('LV Denim', 1100)">Denim — $1100</div>
+      <div class="product" onclick="addToCart('LV Coat', 1800)">Coat — $1800</div>
+    </div>
+
   </div>
 </section>
 
-<!-- SUBCATEGORIES -->
-<section class="subcategories" id="subcategories">
-  <h2 id="selected-brand-title"></h2>
-  <div class="subcat-grid"></div>
-</section>
-
-<!-- PRODUCTS -->
-<section class="products" id="products">
-  <h2 id="products-title"></h2>
-  <div class="grid"></div>
-</section>
-
+<script src="script.js"></script>
 </body>
 </html>

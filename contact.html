@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact - Luxury Reclaim</title>
+  <meta charset="UTF-8">
+  <title>Contact | Luxury Reclaim</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-<script src="script-contact.js" defer></script>
-
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div id="loader">LUXURY RECLAIM</div>
+<!-- HEADER -->
+<header>
+  <div class="brand-name">LUXURY RECLAIM</div>
 
-<header class="navbar">
-  <div id="logo3d">
-    <img src="logo.png" alt="Luxury Reclaim Logo" class="spinning-logo">
-  </div>
   <nav>
     <a href="index.html">Home</a>
+    <a href="index.html#brands">Brands</a>
     <a href="contact.html">Contact</a>
-    <a href="cart.html"><span id="cart-count">0</span> 🛒</a>
+    <a href="cart.html">Cart <span id="cartCount">0</span></a>
   </nav>
 </header>
 
+<!-- CONTACT SECTION -->
 <section class="contact">
-  <h2>Contact Us</h2>
-  <p>Have questions or need assistance? Reach out to us:</p>
 
-  <form id="contact-form">
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Email Address" required />
-    <textarea placeholder="Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+  <div class="contact-container">
+
+    <h1>Contact Us</h1>
+    <p class="contact-subtitle">For private enquiries and exclusive access, reach out below.</p>
+
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea placeholder="Your Message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+
 </section>
 
 </body>
